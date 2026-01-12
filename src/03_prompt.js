@@ -10,3 +10,4 @@ console.log("Ein Markt belohnt nicht Fleiß, sondern Positionierung!");
 
 // npm i prompt -sync
 // npm init -y
+// https://www.npmjs.com/package/prompt-sync
