@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/01a-PP-ComCave/01_Basic_PP#readme",
   "dependencies": {
+    "open": "^11.0.0",
     "prompt-sync": "^4.2.0"
   }
 }
