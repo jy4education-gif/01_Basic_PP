@@ -26,7 +26,7 @@ console.log(`Das Alter von ${zweiterName} ist: ${alterZweiterName}`);
 
 "use strict";
 
-const prompt = require('prompt-sync')({ sigint: true });
+//const prompt = require('prompt-sync')({ sigint: true });
 
 /**
  * Berechnet das Alter basierend auf dem Geburtsjahr.
