@@ -82,6 +82,7 @@ getString("Matz", "Mütze");
 function getString (firstName, familyName) {  // Parameter
     const GAP = " "; // Konstante für Leerzeichen
     let outputString = "Hallo, " + firstName + GAP + familyName + "!";
+    output("!!");
     return outputString; // Wichtig!! outputString wird an Aufrufer zurückgegeben
 }
 
