@@ -54,6 +54,6 @@ function ausgabeNamen() {
 // }
 
 /***** Funktionen 03a *****/
-// 03a. Vorbereitung -Trennen der Verantwortlichkeiten
-// Postulat: one fnction = one job (uncle Bob)
+// 03a. Vorbereitung -Trennen der Verantwortlichkeiten | Kapselung
+// Postulat: one fnction = one job (uncle Bob) | „Es sollte immer nur einen Grund geben eine Klasse zu ändern” |Für typografisch korrekte deutsche Anführungszeichen („unten“, “oben“) nutzen Sie unter Windows die ALT-Codes: Alt + 0132 für „ (unten), Alt + 0147 oder Alt + 0148 für “ (oben)
 // SRP single responsibility principle
