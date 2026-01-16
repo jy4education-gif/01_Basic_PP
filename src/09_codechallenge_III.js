@@ -18,15 +18,18 @@
 // Variablendeklaration
 let food = "";
 let drink = "";
+const prompt = require('prompt-sync')({sigint: true});
 
 /**
  * Funktion zur Essensbestellung
  */
 function orderFood() {
-    console.log("Hamburger (1), Cheeseburger (2) oder Chilliburger (3)?");
-    // In einer echten Browser-Umgebung würde hier prompt() verwendet werden.
-    // Für die Simulation setzen wir einen Beispielwert oder nutzen ein Argument.
-    let selection = "1"; // Beispiel: Hamburger gewählt
+    // console.log("Hamburger (1), Cheeseburger (2) oder Chilliburger (3)?");
+    // // In einer echten Browser-Umgebung würde hier prompt() verwendet werden.
+    // // Für die Simulation setzen wir einen Beispielwert oder nutzen ein Argument.
+    // let selection = "1"; // Beispiel: Hamburger gewählt
+
+    let selection = prompt("Hamburger (1), Cheeseburger (2) oder Chilliburger (3)?");
 
     switch (selection) {
         case "1":
