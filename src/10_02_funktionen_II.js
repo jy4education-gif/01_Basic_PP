@@ -1,6 +1,6 @@
 // Rechenprogramm mit Auswahl der Rechenart + Eingabe via prompt-sync
 const prompt = require('prompt-sync')({sigint: true});
-
+console.log("10_02_funktionen_II");
 // 1. Rechenlogik 
 const add = (a, b) => a + b;
 const sub = (a, b) => a - b;
