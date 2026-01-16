@@ -123,4 +123,4 @@ const result = taschenRechner(op, a, b);
 console.log(`-------------------`);
 console.log(`Ergebnis: ${result}`);
 
-// Test: dies ist ein Test: ich habe nun in der remo repo diesen comment erzeugt und versuche nun diesen lokal zu pullen
+// :-)
