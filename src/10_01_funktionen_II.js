@@ -91,10 +91,11 @@
 // }
 
 
+
 // Rechenprogramm mit Auswahl der Rechenart + Eingabe via prompt-sync
 const prompt = require('prompt-sync')({sigint: true});
 
-// 1. Definition der reinen Rechenlogik 
+// 1. Rechenlogik 
 const add = (a, b) => a + b;
 const sub = (a, b) => a - b;
 const mul = (a, b) => a * b;
@@ -105,10 +106,11 @@ const operations = {
     '+': add,
     '-': sub,
     '*': mul,
-    '/': div
+    '/': div,
+    ':': div,
 };
 
-// 3. Rechenfunktion
+// 3. Führt die Rechenoperation dynamisch per Key-Lookup asu (ersetz hier den switch /Case)
 const taschenRechner = (op, a, b) => operations[op] ? operations[op](a, b) : "Ungültiger Operator";
 
 // 4. Steuerung (Eingabe und Ablauf)
@@ -116,7 +118,6 @@ const a = parseFloat(prompt("Wert für a eingeben: "));
 const b = parseFloat(prompt("Wert für b eingeben: "));
 const op = prompt("Operator eingeben (+, -, *, /): ");
 
-// Wichtig: parseFloat wandelt den String vom Prompt in eine echte Zahl um - Danke Fabi !
 const result = taschenRechner(op, a, b);
 
 console.log(`-------------------`);
