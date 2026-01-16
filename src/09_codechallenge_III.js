@@ -29,7 +29,7 @@ function orderFood() {
     // // Für die Simulation setzen wir einen Beispielwert oder nutzen ein Argument.
     // let selection = "1"; // Beispiel: Hamburger gewählt
 
-    let selection = prompt("Hamburger (1), Cheeseburger (2) oder Chilliburger (3)?");
+    let selection = prompt("Hamburger (1), Cheeseburger (2) oder Chilliburger (3)? ");
 
     switch (selection) {
         case "1":
@@ -51,8 +51,8 @@ function orderFood() {
  * Funktion zur Getränkebestellung
  */
 function orderDrink() {
-    console.log("Cola (1), Fanta (2), Sprite (3)?");
-    let selection = "2"; // Beispiel: Fanta gewählt
+    // console.log("Cola (1), Fanta (2), Sprite (3)?");
+    let selection = prompt("Cola (1), Fanta (2), Sprite (3)? ");
 
     switch (selection) {
         case "1":
@@ -78,9 +78,8 @@ function order() {
     
     // Essensbestellung aufrufen
     orderFood();
-    
-    console.log("Möchten Sie ein Getränk dazu bestellen? (j/n)");
-    let wantDrink = "j"; // Beispiel: Ja gewählt
+    // console.log("Möchten Sie ein Getränk dazu bestellen? (j/n)");
+    let wantDrink = prompt("Möchten Sie ein Getränk dazu bestellen? (j/n) ");
     
     if (wantDrink === "j") {
         // Getränkebestellung aufrufen
