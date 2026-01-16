@@ -86,16 +86,21 @@
 // module: output | test:
 // output("hello");
 // output(2);
-function output(outputData) {
-	console.log(outputData);
-}
+// function output(outputData) {
+// 	console.log(outputData);
+// }
 
+
+// Rechenprogramm mit Auswahl der Rechenart + Eingabe via prompt-sync
+const prompt = require('prompt-sync')({sigint: true});
+
+// 1. Definition der reinen Rechenlogik 
 const add = (a, b) => a + b;
 const sub = (a, b) => a - b;
 const mul = (a, b) => a * b;
-const div = (a, b) => b === 0 ? "Fehler" : a / b;
+const div = (a, b) => b === 0 ? "Fehler: Division durch Null" : a / b;
 
-
+// 2. Lookup-Objekt (Mapping)
 const operations = {
     '+': add,
     '-': sub,
@@ -103,7 +108,16 @@ const operations = {
     '/': div
 };
 
-// Der Aufruf in einer einzigen Zeile
-const compute = (op, a, b) => operations[op] ? operations[op](a, b) : "Ungültiger Operator";
+// 3. Rechenfunktion
+const taschenRechner = (op, a, b) => operations[op] ? operations[op](a, b) : "Ungültiger Operator";
 
-console.log(compute('+', 10, 5)); // 15
+// 4. Steuerung (Eingabe und Ablauf)
+const a = parseFloat(prompt("Wert für a eingeben: "));
+const b = parseFloat(prompt("Wert für b eingeben: "));
+const op = prompt("Operator eingeben (+, -, *, /): ");
+
+// Wichtig: parseFloat wandelt den String vom Prompt in eine echte Zahl um - Danke Fabi !
+const result = taschenRechner(op, a, b);
+
+console.log(`-------------------`);
+console.log(`Ergebnis: ${result}`);
