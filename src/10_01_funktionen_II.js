@@ -122,3 +122,5 @@ const result = taschenRechner(op, a, b);
 
 console.log(`-------------------`);
 console.log(`Ergebnis: ${result}`);
+
+// Test
