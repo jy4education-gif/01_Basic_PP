@@ -90,13 +90,12 @@ function output(outputData) {
 	console.log(outputData);
 }
 
-// Deine Grundfunktionen (wie bisher)
 const add = (a, b) => a + b;
 const sub = (a, b) => a - b;
 const mul = (a, b) => a * b;
 const div = (a, b) => b === 0 ? "Fehler" : a / b;
 
-// Das "Gehirn" deines Taschenrechners
+
 const operations = {
     '+': add,
     '-': sub,
