@@ -25,7 +25,7 @@ function getSelection(type, message, defaultMsg) {
  * Hauptfunktion für den Bestellvorgang
  */
 function order() {
-    console.log("Herzlich Willkommen bei MD, Ihre Bestellung bitte!");
+    console.log("\nHerzlich Willkommen bei MD, Ihre Bestellung bitte!");
 
     // Essen bestellen
     const food = getSelection(
@@ -36,7 +36,7 @@ function order() {
 
     // Getränk-Logik
     let drink = "";
-    const wantDrink = prompt("Möchten Sie ein Getränk dazu bestellen? (j/n) ");
+    const wantDrink = prompt("\nMöchten Sie ein Getränk dazu bestellen? (j/n) ");
 
     if (wantDrink.toLowerCase() === "j") {
         drink = getSelection(
@@ -54,5 +54,5 @@ function order() {
     console.log(`\n--- Ihre Bestellung ---\nHier ist Ihre Bestellung: ${orderSummary}`);
     console.log("Vielen Dank, und Auf Wiedersehen!");
 }
-
+console.log('09_codechallenge_III_var_lookup');
 order();
