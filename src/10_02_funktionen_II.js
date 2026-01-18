@@ -16,7 +16,7 @@ const operations = {
     ':': div,
 };
 
-// 3. Führt die Rechenoperation dynamisch per Key-Lookup asu (ersetz hier den switch /Case)
+// 3. Führt die Rechenoperation dynamisch per Key-Lookup aus (ersetz hier den switch /Case)
 const taschenRechner = (op, a, b) => operations[op] ? operations[op](a, b) : "Ungültiger Operator";   // tenäre Schreibweise
 
 // 4. Steuerung (Eingabe und Ablauf)
