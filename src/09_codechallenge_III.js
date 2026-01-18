@@ -79,15 +79,16 @@ function order() {
     // Essensbestellung aufrufen
     orderFood();
     // console.log("Möchten Sie ein Getränk dazu bestellen? (j/n)");
-    let wantDrink = prompt("Möchten Sie ein Getränk dazu bestellen? (j/n) ");
-    
-    if (wantDrink === "j") {
-        // Getränkebestellung aufrufen
-        orderDrink();
-        console.log(`Hier ist Ihre Bestellung: ${food} und ${drink}`);
-    } else {
-        console.log(`Hier ist Ihre Bestellung: ${food}`);
-    }
+    let wantDrink = prompt("Möchten Sie ein Getränk dazu bestellen? (j/n) ");   //
+    wantDrink === "n" ? console.log(`Hier ist Ihre Bestellung: ${food}`)        //  
+    : (orderDrink(), console.log(`Hier ist Ihre Bestellung: ${food} und ${drink}`)); //
+    // if (wantDrink === "j") {
+    //     // Getränkebestellung aufrufen
+    //     orderDrink();
+    //     console.log(`Hier ist Ihre Bestellung: ${food} und ${drink}`);
+    // } else {
+    //     console.log(`Hier ist Ihre Bestellung: ${food}`);
+    // }
     
     console.log("Vielen Dank, und Auf Wiedersehen!");
 }

@@ -28,3 +28,30 @@ const result = taschenRechner(op, a, b);
 
 console.log(`-------------------`);
 console.log(`Ergebnis: ${result}`);
+
+// Beispiel: Switch-Case
+
+function getStatus(code) {
+    switch (code) {
+        case 'success': return 'Erfolgreich';
+        case 'error': return 'Fehler aufgetreten';
+        case 'loading': return 'Lädt noch...';
+        default: return 'Unbekannter Status';
+    }
+}
+
+console.log(getStatus(prompt("Geben Sie einen Statuscode ein (success, error, loading): ")));
+
+// Beispiel: Lookup-Objekt
+
+const statusLookup = {
+    'success': 'Erfolgreich',
+    'error': 'Fehler aufgetreten',
+    'loading': 'Lädt noch...'
+};  
+
+function getStatusLookup(code) {
+    return statusLookup[code] || 'Unbekannter Status';
+}   
+
+console.log(getStatusLookup(prompt("Geben Sie einen Statuscode ein (success, error, loading): ")));
