@@ -36,7 +36,7 @@ function order() {
 
     // Getränk-Logik
     let drink = "";
-    const wantDrink = prompt("\nMöchten Sie ein Getränk dazu bestellen? (j/n) ");
+    const wantDrink = prompt("Möchten Sie ein Getränk dazu bestellen? (j/n) ");
 
     if (wantDrink.toLowerCase() === "j") {
         drink = getSelection(
