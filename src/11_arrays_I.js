@@ -15,6 +15,7 @@ arr[0] = 99; // Wert an Index 0 ändern
 console.log(arr);
 console.log("Länge des Arrays:", arr.length); // Länge des Arrays
 console.log(`Wert an der Stelle ${arr.indexOf(arr[2])} ist ${arr[2]}`); // Wert an Index 2 ausgeben
+
 /**
  *   PRAXIS
  * 
@@ -24,7 +25,7 @@ console.log(`Wert an der Stelle ${arr.indexOf(arr[2])} ist ${arr[2]}`); // Wert 
 /* For -Schleifen als allg. Wiederholungs-Struktur */
 
 // Inkrement (untere Grenze --> obere Grenze)
-for (let i = 0; i > 100 ; i++) {
+for (let i = 0; i <= 10 ; i++) {
     output("index :" + i);  // i --> Schleifen-Index
 }
 
@@ -64,14 +65,14 @@ function output(outputStr) {
 output(getSentenceArr(["Ich","bin","die","coole","Maxine","Mützerich"]));
 function getSentenceArr(arr) {
     const GAP = " ";
-    const PUNCT = ".";
+    const QUESTION_MARK = "?";
     let str =   arr[0] + GAP +
                 arr[1] + GAP +
                 arr[2] + GAP +
                 arr[3] + GAP +
                 arr[4] + GAP +
                 arr[5] + 
-                PUNCT;
+                QUESTION_MARK;
 
     return str;
 }
@@ -80,7 +81,7 @@ output(getSentenceArr(["Ich","bin","die","coole","und","elegante","Maxine","Müt
 
 function getSentenceArr(arr) {
   const GAP = " ";
-  const PUNCT = ".";
-  return arr.join(GAP) + PUNCT;
+  const EXCLAMATION_MARK = "!";
+  return arr.join(GAP) + EXCLAMATION_MARK;
 }
 
