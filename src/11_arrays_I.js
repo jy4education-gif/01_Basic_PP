@@ -85,3 +85,22 @@ function getSentenceArr(arr) {
   return arr.join(GAP) + EXCLAMATION_MARK;
 }
 
+// Semantik -> Numerik: transformieren ; Spalte -> Zeile : transponieren
+/********* Überlegungen - Transponierung **********/
+
+/*
+1. Einer Variablen kann Ihr eigener Wert zugewiesen werden.
+Solange die Variable existiert, bleibt dieser erhalten.
+hier: Aufsummierung
+*/
+
+/* Zu "Fuß" - DRY !!! */
+let a = 0; // Anfangswert
+output("inhalt von a: " + a);
+a = a + 1; // a = 0 + 1
+output("inhalt von a: " + a);
+a = a + 1; // a = 1 + 1
+output("inhalt von a: " + a);
+a = a + 1; // a = 2 + 1
+output("inhalt von a: " + a);
+
