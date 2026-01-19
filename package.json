@@ -2,7 +2,7 @@
   "name": "01_basic_pp",
   "version": "1.0.0",
   "description": "",
-  "main": "src/10b_funktionen_III.js",
+  "main": "src\\11_arrays_I.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
