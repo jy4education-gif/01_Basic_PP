@@ -79,7 +79,7 @@ function getNumber(figure) {
 
     // wenn Eingabe keine Zahl...
     if (isNaN(num)){
-       return getNumber(figure); // Funktion wird erneut aufgerufen
+       return getNumber(figure); // Funktion wird erneut aufgerufen - !! Wichtig: Rekursive Struktur !!
     }
     
     return num;
