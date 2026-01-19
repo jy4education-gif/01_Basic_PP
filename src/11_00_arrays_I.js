@@ -37,7 +37,7 @@
 // }
 
 
-/* 02b. For-Schleife für Array-Index (Iteration)*/
+/* 02b. For-Schleife für Array-Index (Iteration)*/ 
 // let arr = ["Ich","bin","die","coole","Maxine","Mützerich"];
 // for (let i = 0; i < arr.length; i++) {
 //    output(i); // interner Index 
@@ -78,11 +78,11 @@ Solange die Variable existiert, bleibt dieser erhalten
 hier: Verkettung eines Strings // Transponierung
 */
 
-let str = ""; // Anfangswert
-for (let i = 0; i < 10; i++) {
-   str += "Test" + " "; // a = a + 1
-   output(str);
-}
+// let str = ""; // Anfangswert
+// for (let i = 0; i < 10; i++) {
+//    str += "Test" + " "; // a = a + 1
+//    output(str);
+// }
 
 
 
@@ -96,19 +96,19 @@ for (let i = 0; i < 10; i++) {
 // --> "Ich bin Max Mütze."
 // output(getSentence("Ich","bin","Max","Mütze"));
 // output(getSentence("Ich","bin","die","coole","Maxine","Mützerich"));
-function getSentence(word1,word2,word3,word4,word5,word6) {
-    const GAP = " ";
-    const PUNCT = ".";
-    let str =   word1 + GAP +
-                word2 + GAP +
-                word3 + GAP +
-                word4 + GAP +
-                word5 + GAP +
-                word6 +
-                PUNCT;
+// function getSentence(word1,word2,word3,word4,word5,word6) {
+//     const GAP = " ";
+//     const PUNCT = ".";
+//     let str =   word1 + GAP +
+//                 word2 + GAP +
+//                 word3 + GAP +
+//                 word4 + GAP +
+//                 word5 + GAP +
+//                 word6 +
+//                 PUNCT;
 
-    return str;
-}
+//     return str;
+// }
 
 /*** 01a. Funktionalität mit Array 1 */
 // Kritik | Überlegung
@@ -116,30 +116,30 @@ function getSentence(word1,word2,word3,word4,word5,word6) {
 // arr[0],arr[1] ... arr[n-1] :: Numerische Struktur (0,1,2,3 ... n)
 // --> Transformation: semantisches Problem --> numerisches Problem
 // output(getSentenceArr(["Ich","bin","die","coole","Maxine","Mützerich"]));
-function getSentenceArr(arr) {
-    const GAP = " ";
-    const PUNCT = ".";
-    let str =   arr[0] + GAP +
-                arr[1] + GAP +
-                arr[2] + GAP +
-                arr[3] + GAP +
-                arr[4] + GAP +
-                arr[5] +
-                PUNCT;
+// function getSentenceArr(arr) {
+//     const GAP = " ";
+//     const PUNCT = ".";
+//     let str =   arr[0] + GAP +
+//                 arr[1] + GAP +
+//                 arr[2] + GAP +
+//                 arr[3] + GAP +
+//                 arr[4] + GAP +
+//                 arr[5] +
+//                 PUNCT;
 
-    return str;
-}
+//     return str;
+// }
 
 
 /*** 01b. Funktionalität mit Array 2  */
 // Transponierung:  untereinander ---> nebeneinander
 // Helge Schneider: Anananananderdereihung ...
 // output(getSentenceArr2(["Ich","bin","die","coole","Maxine","Mützerich"]));
-function getSentenceArr2(arr) {
+// function getSentenceArr2(arr) {
 
-    const GAP = " ";
-    const PUNCT = ".";
-    let str = "";
+//     const GAP = " ";
+//     const PUNCT = ".";
+//     let str = "";
 
     // // 1. Iteration: Struktur GENAU erzeugen ...
     // for (let i = 0; i < arr.length; i++) {
@@ -161,13 +161,16 @@ function getSentenceArr2(arr) {
     // return arr.join(GAP) + PUNCT;
 
 
-}
+// }
 
 
 
 // Modul: Ausgabe in Konsole : Test
 // output("hi"); 
-function output(outputStr) {
-    console.log(outputStr);
-}
+// function output(outputStr) {
+//     console.log(outputStr);
+// }
 
+function output(value) {
+    console.log(value);
+}
