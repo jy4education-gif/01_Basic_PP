@@ -20,6 +20,14 @@ console.log(`Wert an der Stelle ${arr.indexOf(arr[2])} ist ${arr[2]}`); // Wert 
  * 
  */
 
+/* 02a. Theorie: Schleifen (for-schleife) */
+/* For -Schleifen als allg. Wiederholungs-Struktur */
+
+// Inkrement (untere Grenze --> obere Grenze)
+for (let i = 0; i > 100 ; i++) {
+    output("index :" + i);  // i --> Schleifen-Index
+}
+
 
 /*** 01. Funktionalität mit Einzelparametern */
 // --> "Ich bin Max Mütze."
