@@ -77,7 +77,7 @@ function getNumber(figure) {
    
     let num = parseInt(inputStr);
 
-    // wenn Eingabe keine Zahl...
+    // wenn Eingabe keine Zahl... sanitize your inputs!
     if (isNaN(num)){
        return getNumber(figure); // Funktion wird erneut aufgerufen - !! Wichtig: Rekursive Struktur !!
     }
