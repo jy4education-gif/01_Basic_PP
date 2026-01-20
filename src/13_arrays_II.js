@@ -3,23 +3,24 @@
 // push() / pop()
 // push --> Daten rein ... (+)
 
-let arr = [];
+// let arr = [];
 
 // output(arr);
-arr.push("Ich");
-output(arr);
-arr.push("bin");
-output(arr);
-arr.push("Max");
-output(arr);
-output("-----------------------");
+// arr.push("Ich");
+// output(arr);
+// arr.push("bin");
+// output(arr);
+// arr.push("Max");
+// output(arr);
+// output("--------------");
+
 // // pop() --> Daten raus ... (-)
-output(arr.pop());
-output(arr);
-output(arr.pop());
-output(arr);
-output(arr.pop());
-output(arr);
+// output(arr.pop());
+// output(arr);
+// output(arr.pop());
+// output(arr);
+// output(arr.pop());
+// output(arr);
 
 
 
