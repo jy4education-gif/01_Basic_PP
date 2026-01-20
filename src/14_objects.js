@@ -6,22 +6,22 @@
 // output(arr[0]);
 // output("------------");
 
-// nested arrays - Prinzip: [[[]]]
-// nested arrays  - hier: [[],[]]
+// // nested arrays - Prinzip: [[[]]]
+// // nested arrays  - hier: [[],[]]
 // arr =   [
 //             ["Ich","bin","Max"],
 //             ["Ich","bin","Moritz"]
 //         ];
-  
+      
 // output(arr);
-// output(arr[0]);    // erstes nested array
-// output(arr[0][0]+ " " + arr[1][2]);  // erstes Element aus erstem nested array + drittes Element aus zweitem nested array
-// output(arr[1][0]);         // erstes Element aus zweitem nested array
+// output(arr[0]);
+// output(arr[0][0]+ " " + arr[1][2]);
+// output(arr[1][0]);
 // output("------------");
 
 // // nested loop
-// for (let i = 0; i < arr.length; i++) {                    // Konvention: äußere Schleife i
-//     for (let j = 0; j < arr[i].length; j++) {            // Konvention: innere Schleife j
+// for (let i = 0; i < arr.length; i++) {
+//     for (let j = 0; j < arr[i].length; j++) {
 //         output("Index i: " + i + " Index j: " + j);
 //         output(arr[i][j]);       
 //     }
@@ -31,10 +31,61 @@
 /***** Objekte 1 Daten/Funktionen *******/
 
 let person = {
-    firstName: "Max",
-    lastName: "Mustermann",
-    age: 30,
-    eyeColor: "blau"    
+                firstName:"Yasin",
+                lastName: "Warsame",
+                salary: [120000, 160000],
+                permission: true,
+                sayHello: function(){return "Hallo"},
+                sayHello2:function () {
+                   return "Hallo, ich bin " + this.firstName;
+                }
+};
+
+// output(person);
+output("---------------");
+output(person.firstName);
+output(person.lastName);
+output(person["lastName"])
+output("---------------");
+output(person.salary[1]);
+for (let i = 0; i < person.salary.length; i++) {
+    output(person.salary[i]);
+}
+output("---------------");
+output(person.permission);
+
+output("---------------")
+const txt = person.sayHello() + ", ich bin " + person.firstName +
+            " und verdiene " + person.salary[1] + " p.a.";
+output(txt);
+output("---------------")
+
+const txt2 = person.sayHello2() + " und verdiene " + person.salary[1] + " p.a.";
+output(txt2);
+
+
+
+// Modul: Ausgabe | Test
+//output("hi");
+function output(outputData) {
+    console.log(outputData);
+}
+
+/***** Objekte 2 - Hierarchie *******/
+// Tiefer, tiefer - Irgendwo in der Tiefe gibt es ein Licht // K.Bush
+// Der Baikalsee ist mit 1642 m der tiefste See der Erde. ...
+// deep - deeper - deepest
+
+
+
+
+nested object {{}}let person = {
+                firstName: "Yasin",
+                lastName: "Warsame",
+                salary: [120000, 160000],
+                permission: true,
+                sayHello: function(){return "Hallo"}
+
 };
 
 
@@ -43,11 +94,5 @@ let person = {
 
 
 
-output(person[age]); // ist undefiened, weil person[age] so nicht existiert, da age kein String ist
-output(person.age);
-
-// Modul: Ausgabe | Test
-//output("hi");
-function output(outputData) {
-    console.log(outputData);
-}
+// const txt2 = person.sayHello2() + " und verdiene " + person.salary[1] + " p.a.";
+// output(txt2);
