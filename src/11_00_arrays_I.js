@@ -84,7 +84,7 @@ hier: Verkettung eines Strings // Transponierung
 //    output(str);
 // }
 
-
+console.log("Test");
 
 /**
  *   PRAXIS
@@ -174,3 +174,51 @@ hier: Verkettung eines Strings // Transponierung
 function output(value) {
     console.log(value);
 }
+// // 1. Funktion DEFINIEREN
+// function getSentenceArr(arr) {
+//   const GAP = " ";
+//   const PUNCT = ".";
+//   let str = "";
+
+//   for (let i = 0; i < arr.length; i++) {
+//     str += arr[i]; // neuer str = alter str + Inhalt an aktuellem Index
+
+//     // Nur Leerzeichen, wenn NICHT das letzte Wort
+//     if (i < arr.length - 1) {
+//       str += GAP;
+//     }
+//   }
+
+//   str += PUNCT; // Punkt am Ende
+//   return str;
+// }
+// // 2. Funktion AUFRUFEN
+// console.log(getSentenceArr(["Ich","bin","die","coole","Maxine","Mützerich"]));
+
+// ***   Lösung Dozent:    ***//
+function getSentenceArr2(arr) {
+
+    const GAP = " ";
+    const PUNCT = ".";
+    let str = "";
+
+    // // 1. Iteration: Struktur GENAU erzeugen ...
+    // for (let i = 0; i < arr.length; i++) {
+    //     if (i != arr.length - 1) {
+    //        str += arr[i] + GAP; 
+    //     } else {
+    //         str += arr[i] + PUNCT;
+    //     }
+    // }
+    // return str;
+
+    // 2. Iteration: Struktur erzeugen + trimmen()
+    for (let i = 0; i < arr.length; i++) {
+        str += arr[i] + GAP; 
+    }
+    return str.trim() + PUNCT;
+
+     // 3. Variante: Ausnutzen von generischen Fuktionen ...
+    return arr.join(GAP) + PUNCT;
+}
+console.log(getSentenceArr2(["Ich","bin","die","coole","Maxine","Mützerich"]));
