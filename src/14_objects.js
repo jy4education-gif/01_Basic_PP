@@ -1,38 +1,50 @@
 /***** Erinnerung: Arrays *******/
 
-let arr;
-arr = ["Ich","bin","Max"];
-output(arr);
-output(arr[0]);
-output("------------");
+// let arr;
+// arr = ["Ich","bin","Max"];
+// output(arr);
+// output(arr[0]);
+// output("------------");
 
 // nested arrays - Prinzip: [[[]]]
 // nested arrays  - hier: [[],[]]
-arr =   [
-            ["Ich","bin","Max"],
-            ["Ich","bin","Moritz"]
-        ];
+// arr =   [
+//             ["Ich","bin","Max"],
+//             ["Ich","bin","Moritz"]
+//         ];
   
-output(arr);
-output(arr[0]);    // erstes nested array
-output(arr[0][0]+ " " + arr[1][2]);  // erstes Element aus erstem nested array + drittes Element aus zweitem nested array
-output(arr[1][0]);         // erstes Element aus zweitem nested array
-output("------------");
+// output(arr);
+// output(arr[0]);    // erstes nested array
+// output(arr[0][0]+ " " + arr[1][2]);  // erstes Element aus erstem nested array + drittes Element aus zweitem nested array
+// output(arr[1][0]);         // erstes Element aus zweitem nested array
+// output("------------");
 
 // // nested loop
-for (let i = 0; i < arr.length; i++) {                    // Konvention: äußere Schleife i
-    for (let j = 0; j < arr[i].length; j++) {            // Konvention: innere Schleife j
-        output("Index i: " + i + " Index j: " + j);
-        output(arr[i][j]);       
-    }
-}
+// for (let i = 0; i < arr.length; i++) {                    // Konvention: äußere Schleife i
+//     for (let j = 0; j < arr[i].length; j++) {            // Konvention: innere Schleife j
+//         output("Index i: " + i + " Index j: " + j);
+//         output(arr[i][j]);       
+//     }
+// }
 
 
 /***** Objekte 1 Daten/Funktionen *******/
 
+let person = {
+    firstName: "Max",
+    lastName: "Mustermann",
+    age: 30,
+    eyeColor: "blau"    
+};
 
 
 
+
+
+
+
+output(person[age]); // ist undefiened, weil person[age] so nicht existiert, da age kein String ist
+output(person.age);
 
 // Modul: Ausgabe | Test
 //output("hi");
