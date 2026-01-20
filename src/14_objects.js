@@ -30,38 +30,61 @@
 
 /***** Objekte 1 Daten/Funktionen *******/
 
-let person = {
-                firstName:"Yasin",
-                lastName: "Warsame",
-                salary: [120000, 160000],
-                permission: true,
-                sayHello: function(){return "Hallo"},
-                sayHello2:function () {
-                   return "Hallo, ich bin " + this.firstName;
-                }
-};
+// let person = {
+//                 firstName:"Yasin",
+//                 lastName: "Warsame",
+//                 salary: [120000, 160000],
+//                 permission: true,
+//                 sayHello: function(){return "Hallo"},
+//                 sayHello2:function () {
+//                    return "Hallo, ich bin " + this.firstName;
+//                 }
+// };
 
-// output(person);
-output("---------------");
-output(person.firstName);
-output(person.lastName);
-output(person["lastName"])
-output("---------------");
-output(person.salary[1]);
-for (let i = 0; i < person.salary.length; i++) {
-    output(person.salary[i]);
-}
-output("---------------");
-output(person.permission);
+// // output(person);
+// output("---------------");
+// output(person.firstName);
+// output(person.lastName);
+// output(person["lastName"])
+// output("---------------");
+// output(person.salary[1]);
+// for (let i = 0; i < person.salary.length; i++) {
+//     output(person.salary[i]);
+// }
+// output("---------------");
+// output(person.permission);
 
-output("---------------")
-const txt = person.sayHello() + ", ich bin " + person.firstName +
-            " und verdiene " + person.salary[1] + " p.a.";
-output(txt);
-output("---------------")
+// output("---------------")
+// const txt = person.sayHello() + ", ich bin " + person.firstName +
+//             " und verdiene " + person.salary[1] + " p.a.";
+// output(txt);
+// output("---------------")
 
-const txt2 = person.sayHello2() + " und verdiene " + person.salary[1] + " p.a.";
-output(txt2);
+// const txt2 = person.sayHello2() + " und verdiene " + person.salary[1] + " p.a.";
+// output(txt2);
+
+/***** Objekte 2 - Hierarchie *******/
+// Tiefer, tiefer - Irgendwo in der Tiefe gibt es ein Licht // K.Bush
+// Der Baikalsee ist mit 1642 m der tiefste See der Erde. ...
+// deep - deeper - deepest
+// nested object {{}}
+
+let baikal = {
+                value:"10m",
+                deep:{
+                    deeper:{
+                            temperature:"4 Grad Celsius",
+                            deepest:"Das Licht - auf 1642m!"
+                            }
+                    }
+             };
+
+
+output(baikal);
+output(baikal.value);
+output(baikal.deep.deeper.deepest);
+output(baikal.deep.deeper.temperature);
+
 
 
 
@@ -70,29 +93,3 @@ output(txt2);
 function output(outputData) {
     console.log(outputData);
 }
-
-/***** Objekte 2 - Hierarchie *******/
-// Tiefer, tiefer - Irgendwo in der Tiefe gibt es ein Licht // K.Bush
-// Der Baikalsee ist mit 1642 m der tiefste See der Erde. ...
-// deep - deeper - deepest
-
-
-
-
-nested object {{}}let person = {
-                firstName: "Yasin",
-                lastName: "Warsame",
-                salary: [120000, 160000],
-                permission: true,
-                sayHello: function(){return "Hallo"}
-
-};
-
-
-
-
-
-
-
-// const txt2 = person.sayHello2() + " und verdiene " + person.salary[1] + " p.a.";
-// output(txt2);
